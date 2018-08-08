@@ -6,9 +6,9 @@ class InetAddressTest {
             UnknownHostException {
         InetAddress address = InetAddress.getLocalHost();
         System.out.println(address);
-        address = InetAddress.getByName("sonarqube.corsearch.org");
+        address = InetAddress.getByName("test.example.com");
         System.out.println(address);
-        InetAddress SW[] = InetAddress.getAllByName("sonarqube.corsearch.org");
+        InetAddress SW[] = InetAddress.getAllByName("test.example.com");
         for (int i = 0; i < SW.length; i++)
             System.out.println(SW[i]);
         System.out.println("InetAddress.getCanonicalHostName()" + address.getCanonicalHostName());
