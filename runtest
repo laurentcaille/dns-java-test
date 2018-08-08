@@ -1,0 +1,5 @@
+#!/bin/sh
+
+wget https://raw.githubusercontent.com/lcaille/dns-java-test/master/Test.java
+javac Test.java
+java InetAddressTest
