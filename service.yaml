@@ -1,15 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: sonarqube-sonarqube
+  name: test-service
   namespace: ci
 spec:
   ports:
   - name: http
     port: 80
     protocol: TCP
-    targetPort: 9000
+    targetPort: 80
   selector:
-    app: sonarqube
-    release: sonarqube
+    app: test
   type: ClusterIP
